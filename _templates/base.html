@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:site_name" content="{{site_name}}">
+<link rel="alternate" type="application/rss+xml" title="{{site_name}}" href="/feed.xml">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/style.css">
+{{head_extra}}
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="/"><span class="logo-mark"></span>{{site_name}}</a>
+    <nav class="menu">{{nav}}</nav>
+  </div>
+</header>
+<div class="ticker"><div class="wrap">{{tagline}}</div></div>
+<main class="wrap">{{content}}</main>
+<footer class="foot"><div class="wrap">
+  <p>{{footer_note}}</p>
+  <p>© {{year}} {{site_name}} · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">Sitemap</a></p>
+</div></footer>
+</body>
+</html>
